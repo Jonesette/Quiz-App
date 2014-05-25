@@ -1,0 +1,162 @@
+
+body {
+	background-color: black;
+	font-family: sans-serif;
+	text-align: center;
+	min-width: 800px;
+	color: white;
+}
+
+#title {
+	font-family: cursive;
+	color: lightblue;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.container img{
+	position: relative;
+	height: 65%;
+	width: 65%;
+	z-index: -1;
+}
+
+.parkName {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	margin: 40px;
+	color: darkblue;
+	font-size: 20px;
+	opacity: 0.75;
+}
+
+
+.number {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	position: absolute;
+	margin: 40px;
+	margin-top: -5px;
+	color: darkblue;
+	font-size: 14px;
+	opacity: 0.75;
+}
+
+.answer {
+	padding: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 16px;
+}
+
+#correct {
+	display: none;
+	background-color: chartreuse;
+}
+
+#incorrect {
+	display: none;
+	background-color: lightcoral;
+}
+
+#USA {
+	display: none;
+}
+
+#californiaQuestion {
+	display: block;
+}
+
+#wyomingQuestion {
+	display: none;
+}
+
+#southDakotaQuestion {
+	display: none;
+}
+
+#newYorkQuestion {
+	display: none;
+}
+
+#northCarolinaQuestion {
+	display: none;
+}
+
+#California {
+	display: none;
+}
+
+#Wyoming {
+	display: none;
+}
+
+#South-Dakota {
+	display: none;
+}
+
+#New-York {
+	display: none;
+}
+
+#North-Carolina {
+	display: none;
+}
+
+.fact {
+	position: absolute;
+	display: inline-block;
+	color: darkblue;
+	margin-top: 225px;
+	margin-left: -350px;
+	width: 400px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: darkgrey;
+	font-size: 12px;	
+	line-height: 1.25;
+}
+
+#form {
+	margin-top: 20px;
+	font-size: 16px;
+	color: darkblue;
+	display: block;
+}
+
+.question {
+	background-color: lightgrey;
+	border-radius: 5px;
+	padding: 8px;
+	display: inline;
+}
+
+.button {
+	font-size: 18px;
+}
+
+#gameStart {
+	position: relative;
+	margin: auto;
+	display: none;
+}
+
+table {
+	display: none;
+	background-color: lightgrey;
+	margin-left: 10px;
+	margin-top: -20%;
+	color: darkblue;
+	font-size: 12px;
+}
+
+td {
+	padding: 3px;
+	border: solid 1px darkblue;
+}
+
