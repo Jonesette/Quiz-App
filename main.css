@@ -7,6 +7,10 @@ body {
 	color: white;
 }
 
+.state {
+	display: none;
+}
+
 #title {
 	font-family: cursive;
 	color: lightblue;
@@ -47,8 +51,8 @@ body {
 
 .answer {
 	padding: 5px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
 	border-radius: 5px;
 	color: darkblue;
 	font-size: 16px;
@@ -65,11 +69,11 @@ body {
 }
 
 #USA {
-	display: none;
+	display: block;
 }
 
 #californiaQuestion {
-	display: block;
+	display: none;
 }
 
 #wyomingQuestion {
@@ -126,7 +130,6 @@ body {
 	margin-top: 20px;
 	font-size: 16px;
 	color: darkblue;
-	display: block;
 }
 
 .question {
@@ -140,14 +143,26 @@ body {
 	font-size: 18px;
 }
 
+.next {
+	padding: 5px;
+	position: absolute;
+	border-radius: 5px;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
 #gameStart {
 	position: relative;
+	display: block;
 	margin: auto;
+	font-size: 18px;
+}
+
+#scoreTrack {
 	display: none;
 }
 
 table {
-	display: none;
 	background-color: lightgrey;
 	margin-left: 10px;
 	margin-top: -20%;
