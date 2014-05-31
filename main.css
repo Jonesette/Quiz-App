@@ -7,9 +7,6 @@ body {
 	color: white;
 }
 
-.state {
-	display: none;
-}
 
 #title {
 	font-family: cursive;
@@ -18,11 +15,19 @@ body {
 	padding-top: 20px;
 }
 
-.container img{
+img{
 	position: relative;
 	height: 65%;
 	width: 65%;
 	z-index: -1;
+}
+
+#questionContainer {
+	display: none;
+}
+
+#answerContainer {
+	display: none;
 }
 
 .parkName {
@@ -49,8 +54,9 @@ body {
 	opacity: 0.75;
 }
 
-.answer {
+.result {
 	padding: 5px;
+	margin-top: 15px;
 	margin-left: 200px;
 	margin-right: 200px;
 	border-radius: 5px;
@@ -72,47 +78,11 @@ body {
 	display: block;
 }
 
-#californiaQuestion {
+.answerImage {
 	display: none;
 }
 
-#wyomingQuestion {
-	display: none;
-}
-
-#southDakotaQuestion {
-	display: none;
-}
-
-#newYorkQuestion {
-	display: none;
-}
-
-#northCarolinaQuestion {
-	display: none;
-}
-
-#California {
-	display: none;
-}
-
-#Wyoming {
-	display: none;
-}
-
-#South-Dakota {
-	display: none;
-}
-
-#New-York {
-	display: none;
-}
-
-#North-Carolina {
-	display: none;
-}
-
-.fact {
+.startFact {
 	position: absolute;
 	display: inline-block;
 	color: darkblue;
@@ -126,7 +96,20 @@ body {
 	line-height: 1.25;
 }
 
-#form {
+.fact {
+	display: inline-block;
+	color: darkblue;
+	margin-top: 0px;
+	margin-left: -425px;
+	width: 400px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: darkgrey;
+	font-size: 12px;	
+	line-height: 1.25;
+}
+
+.guess {
 	margin-top: 20px;
 	font-size: 16px;
 	color: darkblue;
@@ -143,14 +126,6 @@ body {
 	font-size: 18px;
 }
 
-.next {
-	padding: 5px;
-	position: absolute;
-	border-radius: 5px;
-	margin-left: 40px;
-	margin-top: 15px;
-}
-
 #gameStart {
 	position: relative;
 	display: block;
@@ -159,13 +134,13 @@ body {
 }
 
 #scoreTrack {
-	display: none;
+	display: block;
+	margin-top: -20%;
+	margin-left: 10px;
 }
 
 table {
 	background-color: lightgrey;
-	margin-left: 10px;
-	margin-top: -20%;
 	color: darkblue;
 	font-size: 12px;
 }

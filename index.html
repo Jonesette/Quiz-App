@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>National Park Quiz</title>
+	<title id="titleText">National Park Quiz</title>
 	<link rel="stylesheet" href="reset.css"/>
 	<link rel="stylesheet" href="main.css"/> 
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -10,144 +10,56 @@
 </head>
 <body>
 	<div id="title">National Park Quiz</div>
-	<div class="container">
+	<div id="startContainer">
 		<div id="USA">
 			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">The National Park Service was created by an Act signed by President Woodrow Wilson on August 25, 1916. The national park system comprises 401 areas covering more than 84 million acres. Let's see if you can find some of these wonderful parks.</p>
+			<p class="startFact">The National Park Service was created by an Act signed by President Woodrow Wilson on August 25, 1916. The national park system comprises 401 areas covering more than 84 million acres. Let's see if you can find some of these wonderful parks.</p>
 			<input id="gameStart" type="submit" value="Start The Game">
 		</div>
-		<div id="californiaQuestion" class="quiz">
-			<p class="parkName">Giant Sequoia National Park</p>
-			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">This landscape testifies to nature's size, beauty, and diversity - huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees.This park lies side-by-side with Kings Canyon National Park  in the southern Sierra Nevada, east of the San Joaquin Valley. Visitor activities vary by season and elevation (1,370 to 14,494 feet).</p>
-			<p class="number">Question 1 of 5</p>
-			<div id="form">
-				<p class="question">Where is this National Park?</p>
-				<select name="States" class ="answers">
-					<option value="Wyoming">Wyoming</option>
-					<option value="California">California</option>
-					<option value="South-Dakota">South Dakota</option>
-					<option value="New-York">New York</option>
-					<option value="North-Carolina">North Carolina</option>
-				</select>
-				<span class="state">California</span>
-				<input class="button" type="submit" value="Submit">
-			</div>
+	</div>
+	<div id="questionContainer">
+		<div class="parkName">
+			<p></p>
 		</div>
-		<div id="California" class="pictures">
-			<p class="parkName">Giant Sequoia National Park</p>
-			<img src="images/California.jpg" alt="California Image Missing">
-			<p class="fact">This landscape testifies to nature's size, beauty, and diversity - huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees.This park lies side-by-side with Kings Canyon National Park  in the southern Sierra Nevada, east of the San Joaquin Valley. Visitor activities vary by season and elevation (1,370 to 14,494 feet).</p>
-			<p class="number">Question 1 of 5</p>
-			<input class="next" type="submit" value="Next Question">
+		<img src="images/USA.jpg" alt="USA Image Missing">
+		<div class="fact">
+			<p></p>
 		</div>
-		<div id="wyomingQuestion" class="quiz">
-			<p class="parkName">Yellowstone National Park</p>
-			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">It's a wonderland. Old Faithful and the majority of the world's geysers are preserved here. They are the main reason the park was established in 1872 as America's first national park—an idea that spread worldwide. A mountain wildland, home to grizzly bears, wolves, and herds of bison and elk, the park is the core of one of the last, nearly intact, natural ecosystems in the Earth’s temperate zone.</p>
-			<p class="number">Question 2 of 5</p>
-			<div id="form">
-				<p class="question">Where is this National Park?</p>
-				<select name="States" class ="answers">
-					<option value="Wyoming">Wyoming</option>
-					<option value="California">California</option>
-					<option value="South-Dakota">South Dakota</option>
-					<option value="New-York">New York</option>
-					<option value="North-Carolina">North Carolina</option>
-				</select>
-				<span class="state">Wyoming</span>
-				<input class="button" type="submit" value="Submit">
-			</div>
+		<div class ="guess">
+			<p class="question">Where is this National Park?</p>
+			<select name="States" class ="choices">
+				<option value="California">California</option>
+				<option value="South Dakota">South Dakota</option>
+				<option value="New York">New York</option>
+				<option value="North Carolina">North Carolina</option>
+				<option value="Wyoming">Wyoming</option>
+			</select>
+			<input id="submit" class="button" type="submit" value="Submit">
 		</div>
-		<div id="Wyoming" class="pictures">
-			<p class="parkName">Yellowstone National Park</p>
-			<img src="images/Wyoming.jpg" alt="Wyoming Image Missing">
-			<p class="fact">It's a wonderland. Old Faithful and the majority of the world's geysers are preserved here. They are the main reason the park was established in 1872 as America's first national park—an idea that spread worldwide. A mountain wildland, home to grizzly bears, wolves, and herds of bison and elk, the park is the core of one of the last, nearly intact, natural ecosystems in the Earth’s temperate zone.</p>
-			<p class="number">Question 2 of 5</p>
-			<input class="next" type="submit" value="Next Question">
+	</div>
+	<div id="answerContainer">
+		<div class="parkName">
+			<p></p>
 		</div>
-		<div id="southDakotaQuestion" class="quiz">
-			<p class="parkName">Badlands National Park</p>
-			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">The rugged beauty of this park draws visitors from around the world. These striking geologic deposits contain one of the world’s richest fossil beds. Ancient mammals such as the rhino, horse, and saber-toothed cat once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.</p>
-			<p class="number">Question 3 of 5</p>
-			<div id="form">
-				<p class="question">Where is this National Park?</p>
-				<select name="States" class ="answers">
-					<option value="Wyoming">Wyoming</option>
-					<option value="California">California</option>
-					<option value="South-Dakota">South Dakota</option>
-					<option value="New-York">New York</option>
-					<option value="North-Carolina">North Carolina</option>
-				</select>
-				<span class="state">South Dakota</span>
-				<input class="button" type="submit" value="Submit">
-			</div>
+		<img class="answerImage" id="image1" src="images/California.jpg" alt="California Image Missing">
+		<img class="answerImage" id="image2" src="images/Wyoming.jpg" alt="Wyoming Image Missing">
+		<img class="answerImage" id="image3" src="images/South-Dakota.jpg" alt="South Image Missing">
+		<img class="answerImage" id="image4" src="images/New-York.jpg" alt="New York Image Missing">
+		<img class="answerImage" id="image5" src="images/North-Carolina.jpg" alt="North-Carolian Image Missing">
+		<div class="fact">
+			<p></p>
 		</div>
-		<div id="South-Dakota" class="pictures">
-			<p class="parkName">Badlands National Park</p>
-			<img src="images/South-Dakota.jpg" alt="South Image Missing">
-			<p class="fact">The rugged beauty of this park draws visitors from around the world. These striking geologic deposits contain one of the world’s richest fossil beds. Ancient mammals such as the rhino, horse, and saber-toothed cat once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.</p>
-			<p class="number">Question 3 of 5</p>
-			<input class="next" type="submit" value="Next Question">
+		<p class="result" id="correct">Correct!</p>
+		<p class="result" id="incorrect">Incorrect!</p>
+		<input id="next" class="button" type="submit" value="Next Question">	
+		<div id="scoreTrack">
+			<table class="track">
+				<tr>
+					<td colspan="2">ScoreCard</td>
+				</tr>
+			</table>
 		</div>
-		<div id="newYorkQuestion" class="quiz">
-			<p class="parkName">Battle of Saratoga National Historic Park</p>
-			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">Here in the autumn of 1777, American forces met, defeated and forced a major British army to surrender.  This crucial American victory in the battle at this park renewed patriots’ hopes for independence, secured essential foreign recognition and support, and forever changed the face of the world.</p>
-			<p class="number">Question 4 of 5</p>
-			<div id="form">
-				<p class="question">Where is this National Park?</p>
-				<select name="States" class ="answers">
-					<option value="Wyoming">Wyoming</option>
-					<option value="California">California</option>
-					<option value="South-Dakota">South Dakota</option>
-					<option value="New-York">New York</option>
-					<option value="North-Carolina">North Carolina</option>
-				</select>
-				<span class="state">New York</span>
-				<input class="button" type="submit" value="Submit">
-			</div>
-		</div>
-		<div id="New-York" class="pictures">
-			<p class="parkName">Battle of Saratoga National Historic Park </p>
-			<img src="images/New-York.jpg" alt="New York Image Missing">
-			<p class="fact">Here in the autumn of 1777, American forces met, defeated and forced a major British army to surrender.  This crucial American victory in the battle at this park renewed patriots’ hopes for independence, secured essential foreign recognition and support, and forever changed the face of the world.</p>
-			<p class="number">Question 4 of 5</p>
-			<input class="next" type="submit" value="Next Question">
-		</div>
-		<div id="northCarolinaQuestion" class="quiz">
-			<p class="parkName">Cape Hatteras National Seashore</p>
-			<img src="images/USA.jpg" alt="USA Image Missing">
-			<p class="fact">The sound of ocean waves, the starry night sky, or the calm of the salt marshes, you can experience it all. Shaped by the forces of water, wind, and storms these islands are ever changing. The plants, wildlife, and people who live here adapt continually. Whether you are walking on the beach, kayaking on the sound, or climbing the Cape Hatteras Lighthouse there is something for everyone to explore!</p>
-			<p class="number">Question 5 of 5</p>
-			<div id="form">
-				<p class="question">Where is this National Park?</p>
-				<select name="States" class ="answers">
-					<option value="Wyoming">Wyoming</option>
-					<option value="California">California</option>
-					<option value="South-Dakota">South Dakota</option>
-					<option value="New-York">New York</option>
-					<option value="North-Carolina">North Carolina</option>
-				</select>
-				<span class="state">North Carolina</span>
-				<input class="button" type="submit" value="Submit">
-			</div>
-		</div>		
-		<div id="North-Carolina" class="pictures">
-			<p class="parkName">Cape Hatteras National Seashore</p>
-			<img src="images/North-Carolina.jpg" alt="North-Carolian Image Missing">
-			<p class="fact">The sound of ocean waves, the starry night sky, or the calm of the salt marshes, you can experience it all. Shaped by the forces of water, wind, and storms these islands are ever changing. The plants, wildlife, and people who live here adapt continually. Whether you are walking on the beach, kayaking on the sound, or climbing the Cape Hatteras Lighthouse there is something for everyone to explore!</p>
-			<p class="number">Question 5 of 5</p>
-			<input class="next" type="submit" value="Next Question">
-		</div>
-	</div><!--Close .container -->
-	<p class="answer" id="correct">Correct!</p>
-	<p class="answer" id="incorrect">Incorrect!</p>
-	<table id="scoreTrack">
-		<tr>
-			<td colspan="2">ScoreCard</td>
-		</tr>
-	</table>
+	</div>
+
 </body>
 </html>
