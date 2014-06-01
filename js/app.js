@@ -39,7 +39,7 @@ $(document).ready(function(){
               	$("#scoreTrack").html('<table class="track"><tr><td colspan="2">ScoreCard</td></tr></table>')
             }
             else {
-            	$("#titleText").html('Thanks for Playing!');
+            	$("#title").html('Thanks for Playing!');
 			}
 		}
 	};
